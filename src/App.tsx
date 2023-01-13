@@ -1,19 +1,19 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Header from "components/Header";
-import Home from "pages/Home";
-import Footer from "components/Footer";
-import NotFound from "pages/NotFound";
+import Header from "components/Layouts/Header";
+import Footer from "components/Layouts/Footer";
+import Views from "views";
 
-function App() {
+const App = () => {
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Views />} />
       </Routes>
+      <Footer />
     </>
   );
-}
+};
 
 export default App;

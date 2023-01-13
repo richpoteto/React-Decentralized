@@ -1,6 +1,6 @@
-import { Box, Icon, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
-import LogoIcon from 'assets/logo.svg';
+import LogoIcon from "assets/logo.svg";
 
 export default function Logo() {
   return (
@@ -12,12 +12,11 @@ export default function Logo() {
         alignItems="center"
         borderRadius={1}
         src={LogoIcon}
-        sx={(theme) => ({
+        sx={{
           width: "36px",
-          height: "36px"
-        })}
-      >
-      </Box>
+          height: "36px",
+        }}
+      />
     </Link>
   );
 }
